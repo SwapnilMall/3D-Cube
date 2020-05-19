@@ -1,0 +1,50 @@
+.cube {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	margin: 200px;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	transform: rotateX(25deg) rotateY(-25deg);
+}
+
+.face {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	transition: 1s ease-in-out;
+}
+
+.one {
+	background-color: aquamarine;
+	animation: rotate-one 2s ease-in-out infinite alternate;
+	opacity: 50%;
+}
+.two {
+	background-color: darkmagenta;
+	transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+	animation: rotate-two 2s ease-in-out infinite alternate;
+	opacity: 50%;
+}
+.three {
+	background-color: blue;
+	transform: rotateX(-90deg) translateZ(-100px) translateY(-100px);
+	opacity: 50%;
+}
+.four {
+	background-color: yellow;
+	transform: rotateX(-90deg) translateY(-100px) translateZ(100px);
+	opacity: 50%;
+}
+.five {
+	background-color: green;
+	transform: rotateY(90deg) translateX(-100px) translateZ(100px);
+	opacity: 50%;
+}
+.six {
+	background-color: red;
+	transform: translateZ(200px);
+	opacity: 50%;
+}
