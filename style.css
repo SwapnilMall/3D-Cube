@@ -19,13 +19,11 @@
 
 .one {
 	background-color: aquamarine;
-	animation: rotate-one 2s ease-in-out infinite alternate;
 	opacity: 50%;
 }
 .two {
 	background-color: darkmagenta;
 	transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
-	animation: rotate-two 2s ease-in-out infinite alternate;
 	opacity: 50%;
 }
 .three {
